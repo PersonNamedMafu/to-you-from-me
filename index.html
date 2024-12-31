@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To You, From Me.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/321a0183ed.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <style>
+        html, body {
+            scroll-snap-type: y mandatory;
+            height: 100%;
+            margin: 0;
+            scroll-behavior: smooth;
+            transition: transform 0.5s ease;
+        }
+
+        section {
+            scroll-snap-align: start;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .h-screen {
+                overflow-x: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Section -->
+    <section class="w-full h-screen bg-[url('images/pages/welcome.png')] bg-cover bg-center flex flex-col items-center justify-center text-center">
+        <div data-aos="fade-up" class="w-full bg-black/40 py-4">
+            <h1 class="text-5xl font-bold text-white mb-4">
+                Welcome <span class="text-pink-500">Kimberly</span>!
+            </h1>
+
+            <p class="text-lg lg:text-xl font-semibold text-white">
+                Semua ini kubuat, didedikasikan hanya untukmu.
+                <span class="block underline underline-offset-2 decoration-pink-500">
+                    By Kinan<i class="fa-solid fa-face-smile-beam ml-2"></i>
+                </span>
+            </p>
+        </div>
+    </section>
+    <!-- Welcome Section End -->
+
+    <!-- About You Section -->
+    <section class="w-full h-screen bg-[url('images/pages/about.jpg')] bg-cover bg-center flex flex-col items-center justify-center">
+        <h1 data-aos="fade-down" class="text-3xl font-bold text-white underline underline-offset-4 decoration-pink-500 mb-5 drop-shadow-md">
+            About You<i class="fa-solid fa-mug-hot ml-2"></i>
+        </h1>
+
+        <div data-aos="fade-up" class="bg-black/40 px-4 py-3 sm:px-6 sm:py-4 rounded max-w-[90%] sm:max-w-xl lg:max-w-4xl mx-auto">
+            <p class="text-white text-sm sm:text-base text-justify">
+                Menurutku, Eggra itu orangnya... sangat baik! Walaupun terkadang ngeselin, konyol, and a certified
+                yapper (gapapa sih, tetap merasa senang). Tapi di saat yang sama, bisa menunjukkan kebaikannya kepadaku
+                (kerasa bat di sini jir <i class="fa-solid fa-face-grin-beam-sweat"></i>). Dan sepertinya beliau ini
+                terlalu nolep dan wibu, apalagi soal Hanako. Udah khayalan, gk nyata di real life maupun anime (hantu),
+                dah gitu aslinya legenda urban Jepang yang merupakan roh seorang perempuan (PEREMPUAN LOH!). Gw jujur
+                gk tau lu sebenarnya suka yang BL atau GL gitu-gituan (bisa jadi salah satu atau keduanya), tapi gw gk
+                akan mempertanyakannya maupun memedulikannya. Karena walau dengan kerandoman dirimu, kamu adalah orang
+                terbaik dalam hidupku. Aku ingin mengucapkan, terima kasih banyak!!
+                <i class="fa-solid fa-face-laugh-beam"></i>
+            </p>
+        </div>
+    </section>
+    <!-- About You Section End -->
+
+    <!-- Your Hobbies Section -->
+    <section class="w-screen h-screen bg-[url('images/pages/your_hobbies.jpeg')] bg-cover bg-center flex flex-col items-center justify-center gap-2">
+        <h1 data-aos="fade-down" class="text-2xl lg:text-3xl font-bold text-white underline underline-offset-4 decoration-pink-500 drop-shadow-md">
+            Your Hobbies<i class="fa-solid fa-pencil ml-2"></i>
+        </h1>
+
+        <div class="flex flex-col lg:flex-row flex-wrap gap-5 justify-center">
+            <!-- Badminton -->
+            <div data-aos="fade-right" class="relative bg-gradient-to-br from-black/60 to-gray-800 p-6 flex flex-col items-center rounded-lg shadow-lg">
+                <img src="images/badminton.jpeg" alt="Badminton" class="w-24 h-24 rounded-full border-4 border-pink-500 object-cover">
+                <h4 class="font-semibold text-center text-white mt-3 text-lg">Badminton</h4>
+                <div class="absolute top-3 right-3 bg-pink-500 text-white text-xs px-2 py-1 rounded-full">Sport</div>
+            </div>
+    
+            <!-- Drawing -->
+            <div data-aos="fade-in" class="relative bg-gradient-to-br from-black/60 to-gray-800 p-6 flex flex-col items-center rounded-lg shadow-lg">
+                <img src="images/drawing.jpg" alt="Drawing" class="w-24 h-24 rounded-full border-4 border-blue-500 object-cover">
+                <h4 class="font-semibold text-center text-white mt-3 text-lg">Drawing</h4>
+                <div class="absolute top-3 right-3 bg-blue-500 text-white text-xs px-2 py-1 rounded-full">Art</div>
+            </div>
+    
+            <!-- Volleyball -->
+            <div data-aos="fade-left" class="relative bg-gradient-to-br from-black/60 to-gray-800 p-6 flex flex-col items-center rounded-lg shadow-lg">
+                <img src="images/volleyball.jpg" alt="Volleyball" class="w-24 h-24 rounded-full border-4 border-green-500 object-cover">
+                <h4 class="font-semibold text-center text-white mt-3 text-lg">Volleyball</h4>
+                <div class="absolute top-3 right-3 bg-green-500 text-white text-xs px-2 py-1 rounded-full">Sport</div>
+            </div>
+        </div>
+    </section>
+    <!-- Your Hobbies Section End -->
+
+    <!-- Your Favorite Foods Section -->
+    <section class="w-screen h-screen bg-[url('images/pages/your_favorite_foods.jpg')] bg-cover bg-center flex flex-col items-center justify-center gap-5">
+        <h1 data-aos="fade-down" class="text-2xl lg:text-3xl font-bold text-white underline underline-offset-4 decoration-pink-500 drop-shadow-md">
+            Your Favorite Foods<i class="fa-solid fa-utensils ml-2"></i>
+        </h1>
+
+        <div class="flex flex-row flex-wrap gap-5 justify-center">
+            <!-- Chicken Katsu -->
+            <div data-aos="fade-right" class="relative bg-gradient-to-br from-black/60 to-gray-800 p-6 flex flex-col items-center rounded-lg shadow-lg">
+                <img src="images/chicken_katsu.jpg" alt="Chicken Katsu" class="w-24 h-24 rounded-full border-4 border-yellow-500 object-cover">
+                <h4 class="font-semibold text-center text-white mt-3 text-lg">Chicken Katsu</h4>
+                <div class="absolute top-3 right-3 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">Japanese</div>
+            </div>
+    
+            <!-- Chinese Foods -->
+            <div data-aos="fade-left" class="relative bg-gradient-to-br from-black/60 to-gray-800 p-6 flex flex-col items-center rounded-lg shadow-lg">
+                <img src="images/chinese_food.jpg" alt="Chinese Foods" class="w-24 h-24 rounded-full border-4 border-red-500 object-cover">
+                <h4 class="font-semibold text-center text-white mt-3 text-lg">Chinese Foods</h4>
+                <div class="absolute top-3 right-3 bg-red-500 text-white text-xs px-2 py-1 rounded-full">Chinese</div>
+            </div>
+        </div>
+    </section>
+    <!-- Your Favorite Foods Section End -->
+
+    <!-- Your Favorite Characters Section -->
+    <section class="w-screen h-screen bg-[url('images/pages/your_favorite_characters.jpg')] bg-cover bg-center flex flex-col items-center justify-center gap-2">
+        <h1 data-aos="fade-down" class="text-2xl lg:text-3xl font-bold text-white underline underline-offset-4 decoration-pink-500 drop-shadow-md">
+            Your Favorite Characters<i class="fa-solid fa-circle-user ml-2"></i>
+        </h1>
+        
+        <div class="flex flex-col lg:flex-row flex-wrap gap-5 justify-center">
+            <!-- Hu Tao -->
+            <div data-aos="fade-left" class="relative bg-gradient-to-br from-black/60 to-gray-800 p-6 flex flex-col items-center rounded-lg shadow-lg">
+                <img src="images/hutao.jpg" alt="Hu Tao" class="w-24 h-24 rounded-full border-4 border-orange-500 object-cover">
+                <h4 class="font-semibold text-center text-white mt-3 lg:mt-10 text-lg">Hu Tao</h4>
+                <div class="absolute top-3 right-3 bg-orange-500 text-white text-xs px-2 py-1 rounded-full">Genshin</div>
+            </div>
+    
+            <!-- Herrscher of Sentience -->
+            <div data-aos="fade-in" class="relative bg-gradient-to-br from-black/60 to-gray-800 p-6 flex flex-col items-center rounded-lg shadow-lg">
+                <img src="images/herrscher.jpg" alt="Herrscher of Sentience" class="w-24 h-24 rounded-full border-4 border-sky-500 object-cover">
+                <h4 class="font-semibold text-center text-white mt-3 text-lg w-24">Herrscher of Sentience</h4>
+                <div class="absolute top-3 right-3 bg-sky-500 text-white text-xs px-2 py-1 rounded-full">HOI3</div>
+            </div>
+    
+            <!-- Mobius -->
+            <div data-aos="fade-right" class="relative bg-gradient-to-br from-black/60 to-gray-800 p-6 flex flex-col items-center rounded-lg shadow-lg">
+                <img src="images/mobius.jpg" alt="Mobius" class="w-24 h-24 rounded-full border-4 border-lime-500 object-cover">
+                <h4 class="font-semibold text-center text-white mt-3 lg:mt-10 text-lg">Mobius</h4>
+                <div class="absolute top-3 right-3 bg-lime-500 text-white text-xs px-2 py-1 rounded-full">HOI3</div>
+            </div>
+        </div>
+    </section>
+    <!-- Your Favorite Characters Section End -->
+
+    <!-- A Message for You Section -->
+    <section class="w-screen h-screen bg-[url('images/pages/message.jpg')] bg-cover bg-center flex flex-col items-center justify-center">
+        <h1 data-aos="fade-down" class="text-3xl font-bold text-white underline underline-offset-4 decoration-pink-500 mb-5 drop-shadow-md">
+            A Message for You<i class="fa-solid fa-comment-dots ml-2"></i>
+        </h1>
+
+        <div data-aos="fade-right" class="bg-black/40 px-4 py-3 sm:px-6 sm:py-4 rounded max-w-[80%] self-start mx-5">
+            <p class="text-white text-xs lg:text-base text-justify">
+                Sepertinya 4 tahun sudah lewat sejak pertama kali kita bertemu. Kalau gk salah berawal dari random grup
+                IG yang secara random gw dimasukin, ada kamu juga disitu. Semenjak saat itu, kita selalu berbincang,
+                bercanda, dan saling roasting. Kita masih muda dan naif. Jujur kita cringe banget kala itu
+                <i class="fa-solid fa-face-grin-beam-sweat"></i>. Tapi, walaupun kenyataannya begitu, kenangan itu
+                nyata. Kenangan itulah yang mengukir hubungan kita, dan yang membentuk diri kita yang sekarang. Semua
+                perjuangan, canda tawa, mimpi, kekecewaan, suka maupun duka yang sudah kita lalui. Telah menjadi kita
+                yang sekarang.
+            </p>
+        </div>
+
+        <div data-aos="fade-left" class="bg-black/40 px-4 py-3 sm:px-6 sm:py-4 rounded max-w-[80%] mt-5 self-end mx-5">
+            <p class="text-white text-xs lg:text-base text-justify">
+                Maafkan aku... Untuk semua kesalahan dan kekecewaan yang sudah melukai hatimu. Saat kita masih
+                "pacaran", jujur saja gw merasa senang sekali. Kau memberikanku banyak perhatian, membuatku sangat
+                bahagia. Mungkin saja, kamulah orang pertama yang mewarnai kanvas hidupku. Tapi, pada akhirnya aku
+                mengecewakanmu. Saat itu, aku masih belum bisa memahami diriku sendiri maupun mencoba untuk memahami.
+                Pada akhirnya, tanpa kusadari aku.. Melukaimu. Maafkan aku... Mungkin saja kamu masih belum bisa
+                melupakan hari itu, mungkin kamu membenciku karena hal itu. Maaf... Kumohon... Maafkan aku.
+            </p>
+        </div>
+    </section>
+    <!-- A Message for You Section End -->
+
+    <!-- A Message for You Section 2 -->
+    <section class="w-screen h-screen bg-[url('images/pages/message2.jpeg')] bg-cover bg-center flex flex-col items-center justify-center">
+        <div data-aos="fade-left" class="bg-black/40 px-4 py-3 sm:px-6 sm:py-4 rounded max-w-[80%] self-end mx-5">
+            <p class="text-white text-xs lg:text-base text-justify">
+                Yang ingin gw sampaikan kepadamu, teruslah maju melangkah ke depan. Jangan menyerah pada hidup.
+                Meskipun mungkin saja ada hal-hal yang tidak kamu sukai, bukan berarti tidak ada hal-hal yang kamu
+                sukai. Kalaupun memang kamu tidak menyukai hal itu, cobalah untuk bersabar, cobalah untuk menerima hal
+                itu. Hidup itu seperti sungai, tidak setiap tikungan akan membawamu ke tempat yang kamu inginkan.
+                Tetapi, setiap tikungan dan belokan merupakan bagian dari perjalanan. Jika kamu sudah menerima hal-hal
+                tersebut. Jika kamu sudah menerima dirimu sepenuhnya, kamu akan menemukan kekuatan bahkan di saat-saat
+                tersulit. Penerimaan bukan berarti menyerah. Itu berarti memahami segala sesuatu, yang baik maupun yang
+                buruk, membentuk dirimu sendiri.
+            </p>
+        </div>
+
+        <div data-aos="fade-right" class="bg-black/40 px-4 py-3 sm:px-6 sm:py-4 rounded max-w-[80%] mt-5 self-start mx-5">
+            <p class="text-white text-xs lg:text-base text-justify">
+                Kamu adalah orang yang kuat, dan aku ingin kamu tetap seperti itu. Teruslah melampaui dirimu sampai
+                pada titik terbaik kamu. Jangan takut berubah. Perubahan memang menakutkan, hal-hal yang sebelumnya
+                menyamankan dirimu, menjadi tidak nyaman karena sesuatu yang asing datang menyergap hidupmu. Meski
+                perubahan memang semenakutkan itu, kamu juga harus menerimanya juga. Sama seperti kamu menerima
+                hal-hal yang tidak mau sukai. Jika kita tidak mengambil satu langkah ke depan, kita tidak akan kemana
+                -mana dalam hidup. Pertumbuhan datang dari merangkul hal yang tidak diketahui, bahkan saat terasa
+                berat. Ingat, tidak apa-apa tersandung dalam di sepanjang perjalanan, begitulah cara kita belajar dan
+                menjadi lebih kuat. Percayalah pada dirimu, teruslah bergerak, dan jangan pernah berhenti menjadi versi
+                terbaik dirimu.
+            </p>
+        </div>
+    </section>
+    <!-- A Message for You Section 2 End -->
+    
+    <!-- End of Message Section -->
+    <section class="w-screen h-screen bg-[url('images/pages/end_message.jpg')] bg-cover bg-center flex flex-col items-center justify-center">
+        <h1 data-aos="fade-right" class="text-3xl font-bold text-white underline underline-offset-4 decoration-pink-500 mb-5 drop-shadow-md">
+            End of Message<i class="fa-solid fa-face-smile-beam ml-2"></i>
+        </h1>
+
+        <div data-aos="fade-left" class="bg-black/40 px-4 py-3 sm:px-6 sm:py-4 rounded max-w-[90%] sm:max-w-xl lg:max-w-4xl mx-auto">
+            <p class="text-white text-sm sm:text-base text-justify">
+                Wah, sudah sampai di akhir pesan aja ya <i class="fa-solid fa-face-grin-beam-sweat"></i>. Terima kasih
+                ya, sudah mau membaca sampai akhir. Hal terakhir yang ingin kusampaikan adalah untuk terus semangat dan
+                terus berbuat baik pada orang-orang yang kamu sayangi dan hargai, dan juga pada dirimu sendiri. Karena
+                suatu saat, mungkin saja kebaikanmu akan terbalaskan kembali.
+            </p>
+
+            <p class="text-white text-sm sm:text-base mt-3 text-justify">
+                Yaaa begitulah, sekali lagi gw ingin minta maaf bila gw masih ada kesalahan atau tutur kata dalam pesan
+                ini. Betewe kita udah kenal selama 4 tahun, tapi gk pernah main game bareng atau ngobrol langsung di
+                call <i class="fa-solid fa-face-grin-beam-sweat"></i>. Mungkin tahun depan kita bisa kalau kamu mau,
+                tidak mau juga tidak apa. Jujur seharusnya web ini sudah selesai dari lama, tapi karena banyak banget
+                kejadian menimpa gw akhir-akhir ini, jadi agak tertunda. Maaf ya. Sekian dari gw, terima kasih, selamat pagi, siang,
+                sore, malam dan selamat tahun baru Eggra!!
+            </p>
+        </div>
+    </section>
+    <!-- End of Message Section End -->
+    
+    <!-- Thank You Section -->
+    <section class="w-screen h-screen bg-[url('images/pages/thankyou.jpg')] bg-cover bg-center flex flex-col items-center justify-center text-center">
+        <div data-aos="fade-in" class="w-full bg-black/40 py-10">
+            <h1 class="text-5xl font-bold text-white">
+                Thank You!<i class="fa-solid fa-heart ml-2 text-pink-500"></i>
+            </h1>
+        </div>
+    </section>
+    <!-- Thank You Section End -->
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease',
+        });
+    </script>
+</body>
+</html>
